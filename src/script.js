@@ -1102,3 +1102,71 @@ if (footer) {
 
   footerObserver.observe(footer);
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector("#content.downloads-section");
+
+  if (!section) return;
+
+  const tabs = Array.from(section.querySelectorAll(".download-tab"));
+  const panels = Array.from(section.querySelectorAll(".download-panel"));
+
+  function activateTab(selectedTab) {
+    const targetId = selectedTab.dataset.target;
+
+    tabs.forEach(function (tab) {
+      const active = tab === selectedTab;
+
+      tab.classList.toggle("active", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.setAttribute("tabindex", active ? "0" : "-1");
+    });
+
+    panels.forEach(function (panel) {
+      const active = panel.id === targetId;
+
+      panel.hidden = !active;
+      panel.classList.remove("panel-enter");
+
+      if (active) {
+        // Restart animation whenever a tab opens
+        void panel.offsetWidth;
+        panel.classList.add("panel-enter");
+      }
+    });
+  }
+
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      activateTab(tab);
+    });
+
+    tab.addEventListener("keydown", function (event) {
+      let nextIndex = index;
+
+      if (event.key === "ArrowRight") {
+        nextIndex = (index + 1) % tabs.length;
+      } else if (event.key === "ArrowLeft") {
+        nextIndex = (index - 1 + tabs.length) % tabs.length;
+      } else if (event.key === "Home") {
+        nextIndex = 0;
+      } else if (event.key === "End") {
+        nextIndex = tabs.length - 1;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      tabs[nextIndex].focus();
+      activateTab(tabs[nextIndex]);
+    });
+  });
+
+  // Show eMudhra Forms initially
+  if (tabs.length > 0) {
+    activateTab(tabs[0]);
+  }
+});
