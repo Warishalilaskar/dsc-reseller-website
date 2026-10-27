@@ -1170,3 +1170,43 @@ document.addEventListener("DOMContentLoaded", function () {
     activateTab(tabs[0]);
   }
 });
+
+
+
+
+
+// FAQ Page Start
+
+
+
+function showContent(type) {
+  const digitalFaq = document.getElementById("digital-faq");
+  const etokenFaq = document.getElementById("etoken-faq");
+
+  const digitalTab = document.getElementById("tab-digital");
+  const etokenTab = document.getElementById("tab-etoken");
+
+  if (!digitalFaq || !etokenFaq || !digitalTab || !etokenTab) {
+    console.error("FAQ section বা tab-এর ID খুঁজে পাওয়া যায়নি।");
+    return;
+  }
+
+  if (type === "digital") {
+    digitalFaq.style.display = "block";
+    etokenFaq.style.display = "none";
+
+    digitalTab.classList.add("active");
+    etokenTab.classList.remove("active");
+  } else if (type === "etoken") {
+    digitalFaq.style.display = "none";
+    etokenFaq.style.display = "block";
+
+    etokenTab.classList.add("active");
+    digitalTab.classList.remove("active");
+  }
+}
+
+// Default tab
+document.addEventListener("DOMContentLoaded", function () {
+  showContent("digital");
+});

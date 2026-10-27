@@ -6,15 +6,14 @@
     <title>Downloads |  DSC Reseller: Become Digital Signature LRAA and earn big profits from fast selling product</title>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/downloads.css">
            <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 />
 </head>
 <body>
-            <!-- ==================================================
-       NAVBAR SECTION START
-  =================================================== -->
+     <!-- NAVBAR SECTION START-->
     <header class="sticky top-0 z-50 border-b border-emerald-100 bg-gradient-to-r from-emerald-50 via-white to-teal-50 shadow-sm backdrop-blur-md">
       <div class="mx-auto max-w-7xl px-4 sm:px-4 lg:px-6">
         <div class="flex min-h-[60px] items-center justify-between lg:min-h-[68px]">
@@ -163,12 +162,10 @@
         </div>
       </div>
     </header>
-    <!-- ==================================================
-       NAVBAR SECTION END
-  =================================================== -->
+    <!--  NAVBAR SECTION END -->
 
 
-<!-- DOWNLOAD PAGE HERO SECTION -->
+<!-- DOWNLOAD PAGE HERO SECTION START-->
 <section
   id="banner-inn-total"
   class="relative isolate overflow-hidden bg-gradient-to-br from-white via-emerald-50/60 to-cyan-50 py-12 sm:py-16 lg:py-20"
@@ -302,228 +299,436 @@
     </div>
   </div>
 </section>
+<!-- DOWNLOAD PAGE HERO SECTION END  -->
 
+<!--  DOWNLOADS SECTION START -->
+<section id="content" class="bg-slate-50 py-12 sm:py-16 lg:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-<!-- Container Page -->
+    <!-- SECTION HEADER -->
+    <div class="mb-10 text-left">
+      <span class="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700">
+        <i class="fa-solid fa-download"></i>
+        DOWNLOAD CENTER
+      </span>
 
+      <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        Downloads &amp; Resources
+      </h2>
 
-<section id="content" class="downloads-section">
-  <div class="downloads-container">
-
-    <!-- Header -->
-    <div class="downloads-heading">
-      <span class="downloads-badge">DSC RESELLER RESOURCES</span>
-      <h1>Downloads <span>Centre</span></h1>
-      <p>
-        You can download several useful drivers and other files here.
-        Right click and choose <strong>"Save as"</strong> option.
+      <p class="max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
+        Download useful Digital Signature Certificate application forms,
+        USB token drivers, root certificates and supporting utilities.
+        Select a category and click any file to open or download it.
       </p>
-      <div class="heading-line"></div>
     </div>
 
-    <!-- Tabs -->
-    <div class="download-tabs" role="tablist" aria-label="Download categories">
-      <button type="button" class="download-tab active" data-target="eMudhra" role="tab" aria-selected="true">
-        <span class="tab-icon">▤</span>
-        <span>eMudhra<br>Forms</span>
-      </button>
+    <!-- INFO CARD -->
+    <div class="mb-8 flex flex-col gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 sm:flex-row sm:items-center">
+      <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-600 text-xl text-white">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
 
-      <button type="button" class="download-tab" data-target="Sify" role="tab" aria-selected="false">
-        <span class="tab-icon">▤</span>
-        <span>Sify<br>Forms</span>
-      </button>
-
-      <button type="button" class="download-tab" data-target="Token" role="tab" aria-selected="false">
-        <span class="tab-icon">♙</span>
-        <span>USB Token<br>Drivers</span>
-      </button>
-
-      <button type="button" class="download-tab" data-target="Root" role="tab" aria-selected="false">
-        <span class="tab-icon">◇</span>
-        <span>Root<br>Chains</span>
-      </button>
-
-      <button type="button" class="download-tab" data-target="Utilities" role="tab" aria-selected="false">
-        <span class="tab-icon">⚙</span>
-        <span>Utilities</span>
-      </button>
+      <div>
+        <h3 class="mb-1 font-bold text-emerald-950">Before downloading</h3>
+        <p class="text-sm leading-6 text-emerald-900">
+          Right-click a download link and choose "Save link as" if you want
+          to save the file manually. Some links may open a PDF directly.
+          Verify that a driver matches your device and operating system.
+        </p>
+      </div>
     </div>
 
-    <!-- TAB 1: eMudhra -->
-    <div class="download-panel active" id="eMudhra" role="tabpanel">
-      <div class="panel-title">
-        <span class="panel-title-icon">▤</span>
+    <!-- SEARCH -->
+    <div class="mb-6">
+      <label for="downloadSearch" class="mb-2 block text-sm font-bold text-slate-700">
+        Search downloads
+      </label>
+
+      <div class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+
+        <input
+          id="downloadSearch"
+          type="search"
+          placeholder="Search forms, token drivers, root chains..."
+          class="w-full rounded-xl border border-slate-200 bg-white py-3.5 pl-11 pr-4 text-sm text-slate-800 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
+        />
+      </div>
+    </div>
+
+    <!-- CATEGORY TABS -->
+    <div class="mb-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+      <div class="flex min-w-max gap-2" id="downloadTabs">
+
+        <button type="button" data-tab="emudhra"
+          class="download-tab rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition">
+          <i class="fa-solid fa-file-pdf mr-2"></i>eMudhra Forms
+        </button>
+
+        <button type="button" data-tab="sify"
+          class="download-tab rounded-xl px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-100">
+          <i class="fa-solid fa-file-lines mr-2"></i>Sify Forms
+        </button>
+
+        <button type="button" data-tab="token"
+          class="download-tab rounded-xl px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-100">
+          <i class="fa-brands fa-usb mr-2"></i>USB Token Drivers
+        </button>
+
+        <button type="button" data-tab="root"
+          class="download-tab rounded-xl px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-100">
+          <i class="fa-solid fa-shield-halved mr-2"></i>Root Chains
+        </button>
+
+        <button type="button" data-tab="utilities"
+          class="download-tab rounded-xl px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-100">
+          <i class="fa-solid fa-screwdriver-wrench mr-2"></i>Utilities
+        </button>
+
+      </div>
+    </div>
+
+    <!-- DOWNLOAD GROUPS -->
+    <div id="downloadPanels" class="space-y-8">
+
+      <!-- ================= EMUDHRA ================= -->
+      <div id="panel-emudhra" class="download-panel space-y-8">
+
+        <!-- Application Forms -->
         <div>
-          <h2>eMudhra Forms</h2>
-          <p>Application forms and fillable PDF form packages.</p>
+          <div class="mb-5 flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <i class="fa-solid fa-file-pdf text-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-extrabold text-slate-900">eMudhra Application Forms</h3>
+              <p class="text-sm text-slate-500">PDF application and request forms</p>
+            </div>
+          </div>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_IND__Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Class 3 IND Encryption and Signature</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_IND_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Class 2 and 3 IND Encryption and Signature</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Class 3 ORG Encryption and Signature</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2and3_Foregin_IND_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Foreign National Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_DFGT.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>DGFT Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Bank_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Bank Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Gov_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Government / Department Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_SSL.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>SSL Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Renewal.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Individual Certificate / Renewal Form</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_RA.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>eMudhra RA Certificate</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Revocation.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Certificate Revocation Request</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Renewal.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-pdf"></i><span>Certificate Renewal Undertaking</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Fillable Forms -->
+        <div>
+          <div class="mb-5">
+            <h3 class="text-xl font-extrabold text-slate-900">Fillable PDF Application Forms</h3>
+            <p class="mt-1 text-sm text-slate-500">ZIP packages containing fillable forms</p>
+          </div>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_IND__Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Class 3 IND Encryption and Signature</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_IND_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Class 3 IND Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Class 3 ORG Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2and3_Foregin_IND_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Foreign National Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_DFGT_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>DGFT Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Bank_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Bank Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Gov_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Government Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_SSL_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>SSL Application</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_RA_edi.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>eMudhra RA Application</span>
+            </a>
+
+          </div>
         </div>
       </div>
 
-      <div class="download-columns">
+      <!-- ================= SIFY ================= -->
+      <div id="panel-sify" class="download-panel hidden">
+        <div class="mb-5">
+          <h3 class="text-xl font-extrabold text-slate-900">Sify Application Forms</h3>
+          <p class="mt-1 text-sm text-slate-500">Application and subscription documents</p>
+        </div>
+
+        <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Enrollment-Doc-Requirment-Sify.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-pdf"></i><span>Application Form - General</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Subscription-Form-DGFT.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-pdf"></i><span>Application Form - DGFT</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Subscription-Form-All-In-One.pdf" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-pdf"></i><span>Subscription Form All In One</span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- ================= TOKEN DRIVERS ================= -->
+      <div id="panel-token" class="download-panel hidden space-y-8">
+
         <div>
-          <h3 class="download-subtitle">1a. Application Forms</h3>
-          <div class="download-list">
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_IND__Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 IND Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_IND_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 IND Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 ORG Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2and3_Foregin_IND_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Foreign National</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_DFGT.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - DGFT</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Bank_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Bank</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Gov_ORG_Encryption_and_Signature.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Government / Departments / Agencies</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_SSL.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - SSL</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Renewal.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 Individual</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_RA.pdf" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - eMudhra RA Certificate</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Revocation.pdf" target="_blank" rel="noopener noreferrer">Digital Certificate Revocation Request</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/e-Mudhra_AppForm_Renewal.pdf" target="_blank" rel="noopener noreferrer">Undertaking for Digital Certificate Renewal Request</a>
+          <h3 class="mb-4 text-xl font-extrabold text-slate-900">HYP 2003 e-Token Drivers</h3>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass1000-Setup.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>HYP 2003 Setup</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-i386.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-brands fa-linux"></i><span>HYP 2003 Linux i386</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-x64.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-brands fa-linux"></i><span>HYP 2003 Linux x64</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-MAC-iOS.rar" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-brands fa-apple"></i><span>HYP 2003 Mac / iOS</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Setup.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>HYP 2003 Setup Package</span>
+            </a>
+
           </div>
         </div>
 
         <div>
-          <h3 class="download-subtitle blue-title">1b. Fillable (PDF) Application Forms</h3>
-          <div class="download-list">
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_IND__Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 IND Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_IND_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 IND Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2_and_3_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Class 3 ORG Encryption and Signature</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class2and3_Foregin_IND_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Foreign National</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_DFGT_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - DGFT</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Bank_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Bank</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_Gov_ORG_Encryption_and_Signature_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - Government / Departments / Agencies</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class3_SSL_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - SSL</a>
-            <a href="http://www.digitalsignatureindia.com/downloads/emudhra-forms/eMudhra_Class1_RA_edi.zip" target="_blank" rel="noopener noreferrer">Digital Signature Certificate - eMudhra RA Certificate</a>
+          <h3 class="mb-4 text-xl font-extrabold text-slate-900">Aladdin e-Token Drivers</h3>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient-x32bit-5.1SP1.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>eToken PKI Client - 32-bit</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient-x64bit-5.1SP1.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>eToken PKI Client - 64-bit</span>
+            </a>
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>eToken PKI Client</span>
+            </a>
+
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- TAB 2: Sify -->
-    <div class="download-panel" id="Sify" role="tabpanel" hidden>
-      <div class="panel-title">
-        <span class="panel-title-icon">▤</span>
         <div>
-          <h2>Sify Forms</h2>
-          <p>Application and subscription forms.</p>
+          <h3 class="mb-4 text-xl font-extrabold text-slate-900">Gemalto e-Token Drivers</h3>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/gemalto-drivers.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>Gemalto Drivers</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-4 text-xl font-extrabold text-slate-900">Watchdata e-Token Drivers</h3>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eMudhra_User.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-file-zipper"></i><span>eMudhra WatchData eToken Drivers</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-4 text-xl font-extrabold text-slate-900">TrustKey e-Token Drivers</h3>
+
+          <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+            <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/TRUST_KEY.exe" target="_blank" rel="noopener noreferrer" class="download-card">
+              <i class="fa-solid fa-shield-halved"></i><span>TrustKey Driver (EXE)</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= ROOT CHAINS ================= -->
+      <div id="panel-root" class="download-panel hidden">
+
+        <div class="mb-5">
+          <h3 class="text-xl font-extrabold text-slate-900">Root Certificates &amp; Chains</h3>
+          <p class="mt-1 text-sm text-slate-500">Certificate authority root and subordinate certificates</p>
+        </div>
+
+        <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/NCODE_CA_2014.der" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-shield-halved"></i><span>NCODE CA 2014</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/e-MudhraCA2014.crt" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-shield-halved"></i><span>eMudhra CA Root Chain</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/eMudhra_Sub_CA2014.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-zipper"></i><span>eMudhra Sub CA Root Chain</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/SafeScryptCA2014.cer" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-shield-halved"></i><span>SafeScrypt CA Root Chain</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/SafeScrypt_Sub_CA2014.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-zipper"></i><span>SafeScrypt Sub CA Root Chain</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/CCA_2011.der" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-shield-halved"></i><span>CCA India 2011</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/root-chains/CCA_2014.der" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-shield-halved"></i><span>CCA India 2014</span>
+          </a>
+
         </div>
       </div>
 
-      <h3 class="download-subtitle">Application Forms</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Enrollment-Doc-Requirment-Sify.pdf" target="_blank" rel="noopener noreferrer">Application Form - General</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Subscription-Form-DGFT.pdf" target="_blank" rel="noopener noreferrer">Application Form - DGFT</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/sify-forms/Subscription-Form-All-In-One.pdf" target="_blank" rel="noopener noreferrer">Subscription Form All In One</a>
-      </div>
-    </div>
+      <!-- ================= UTILITIES ================= -->
+      <div id="panel-utilities" class="download-panel hidden">
 
-    <!-- TAB 3: USB Token Drivers -->
-    <div class="download-panel" id="Token" role="tabpanel" hidden>
-      <div class="panel-title">
-        <span class="panel-title-icon">♙</span>
-        <div>
-          <h2>USB Token Drivers</h2>
-          <p>Token drivers for different devices and operating systems.</p>
+        <div class="mb-5">
+          <h3 class="text-xl font-extrabold text-slate-900">Useful Utilities &amp; Software</h3>
+          <p class="mt-1 text-sm text-slate-500">Administration tools and supporting applications</p>
+        </div>
+
+        <div class="download-list grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/Admin-Tool-for-ePass1000Auto.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i><span>Admin Tool for HYP 2003</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/e-MudhraPersonalSetup.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-zipper"></i><span>eMudhra Personal Setup</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/eMclick.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-zipper"></i><span>eMclick</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/ePass2003-Admin-Plugin.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-zipper"></i><span>HYP 2003 Admin Plugin</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/ePass2003-SDK.zip" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-code"></i><span>HYP 2003 SDK</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/AA_v3.4.exe" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-desktop"></i><span>AMMYY Admin v3.4 (EXE)</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/AA_v3.5.exe" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-desktop"></i><span>AMMYY Admin v3.5 (EXE)</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/PDFCreator-1_7_3_setup.exe" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-file-pdf"></i><span>PDF Creator</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/TeamViewer_Setup_en.exe" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-solid fa-desktop"></i><span>TeamViewer for Windows</span>
+          </a>
+
+          <a href="http://www.digitalsignatureindia.com/downloads/utility/TeamViewer.dmg" target="_blank" rel="noopener noreferrer" class="download-card">
+            <i class="fa-brands fa-apple"></i><span>TeamViewer for Mac</span>
+          </a>
+
         </div>
       </div>
 
-      <h3 class="download-subtitle">HYP 2003 e-Token Drivers</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass1000-Setup.zip" target="_blank" rel="noopener noreferrer">HYP 2003 Setup</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-i386.zip" target="_blank" rel="noopener noreferrer">HYP 2003 Linux i386</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Linux-x64.zip" target="_blank" rel="noopener noreferrer">HYP 2003 Linux x64</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-MAC-iOS.rar" target="_blank" rel="noopener noreferrer">HYP 2003 MAC iOS</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/ePass2003-Setup.zip" target="_blank" rel="noopener noreferrer">HYP 2003 Setup</a>
+      <!-- NO SEARCH RESULTS -->
+      <div id="downloadNoResults" class="hidden rounded-2xl border border-dashed border-slate-300 bg-white px-5 py-12 text-center">
+        <i class="fa-solid fa-magnifying-glass mb-3 text-3xl text-slate-400"></i>
+        <h3 class="font-bold text-slate-800">No downloads found</h3>
+        <p class="mt-2 text-sm text-slate-500">Try a different search term.</p>
       </div>
 
-      <h3 class="download-subtitle">Aladdin e-Token Drivers</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient-x32bit-5.1SP1.zip" target="_blank" rel="noopener noreferrer">eToken PKI Client x32bit 5.1SP1</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient-x64bit-5.1SP1.zip" target="_blank" rel="noopener noreferrer">eToken PKI Client x64bit 5.1SP1</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eToken_PKIClient.zip" target="_blank" rel="noopener noreferrer">eToken PKI Client</a>
-      </div>
-
-      <h3 class="download-subtitle">Gemalto e-Token Drivers</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/gemalto-drivers.zip" target="_blank" rel="noopener noreferrer">Gemalto drivers</a>
-      </div>
-
-      <h3 class="download-subtitle">Watchdata e-Token Drivers</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/eMudhra_User.zip" target="_blank" rel="noopener noreferrer">eMudhra WatchData eToken Drivers</a>
-      </div>
-
-      <h3 class="download-subtitle">TrustKey e-Token Drivers</h3>
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/etoken-drivers/TRUST_KEY.exe" target="_blank" rel="noopener noreferrer">TrustKey Driver</a>
-      </div>
-
-      <h3 class="download-subtitle">Additional Drivers and Software</h3>
-      <div class="download-list">
-        <a href="http://www.esolutions.net.in/downloads/drivers/e-Token-32Bit.zip" target="_blank" rel="noopener noreferrer">For 32 Bit Windows</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/e-Token-64Bit.zip" target="_blank" rel="noopener noreferrer">For 64 Bit Windows</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/for-all-windows.zip" target="_blank" rel="noopener noreferrer">For All Windows</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/for-mac.zip" target="_blank" rel="noopener noreferrer">For MAC OS</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/for-windows.zip" target="_blank" rel="noopener noreferrer">Gemalto e-Token for Windows</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/ammyy-admin.zip" target="_blank" rel="noopener noreferrer">Ammyy Admin</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/java-updates.zip" target="_blank" rel="noopener noreferrer">Java 6 Update 30</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/xp-servicepack-3.zip" target="_blank" rel="noopener noreferrer">Windows XP Service Pack 3</a>
-        <a href="http://www.esolutions.net.in/downloads/drivers/epass-2003-admin.zip" target="_blank" rel="noopener noreferrer">e-Pass 2003 Admin</a>
-      </div>
     </div>
-
-    <!-- TAB 4: Root Chains -->
-    <div class="download-panel" id="Root" role="tabpanel" hidden>
-      <div class="panel-title">
-        <span class="panel-title-icon">◇</span>
-        <div>
-          <h2>Root Chains</h2>
-          <p>Certificate authority root and subordinate certificates.</p>
-        </div>
-      </div>
-
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/NCODE_CA_2014.der" target="_blank" rel="noopener noreferrer">NCODE CA 2014</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/e-MudhraCA2014.crt" target="_blank" rel="noopener noreferrer">e-Mudhra CA Root Chain</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/eMudhra_Sub_CA2014.zip" target="_blank" rel="noopener noreferrer">e-Mudhra Sub CA Root Chain</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/SafeScryptCA2014.cer" target="_blank" rel="noopener noreferrer">SafeScrypt CA Root Chain</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/SafeScrypt_Sub_CA2014.zip" target="_blank" rel="noopener noreferrer">SafeScrypt Sub CA Root Chain</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/CCA_2011.der" target="_blank" rel="noopener noreferrer">CCA India 2011</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/root-chains/CCA_2014.der" target="_blank" rel="noopener noreferrer">CCA India 2014</a>
-      </div>
-    </div>
-
-    <!-- TAB 5: Utilities -->
-    <div class="download-panel" id="Utilities" role="tabpanel" hidden>
-      <div class="panel-title">
-        <span class="panel-title-icon">⚙</span>
-        <div>
-          <h2>Utilities</h2>
-          <p>Useful tools and supporting software.</p>
-        </div>
-      </div>
-
-      <div class="download-list">
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/Admin-Tool-for-ePass1000Auto.zip" target="_blank" rel="noopener noreferrer">Admin Tool for HYP 2003</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/e-MudhraPersonalSetup.zip" target="_blank" rel="noopener noreferrer">eMudhra Personal Setup</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/eMclick.zip" target="_blank" rel="noopener noreferrer">eMclick</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/ePass2003-Admin-Plugin.zip" target="_blank" rel="noopener noreferrer">HYP 2003 Admin Plugin</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/ePass2003-SDK.zip" target="_blank" rel="noopener noreferrer">HYP 2003 SDK</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/AA_v3.4.exe" target="_blank" rel="noopener noreferrer">AMMYY Admin v3.4 (exe)</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/AA_v3.5.exe" target="_blank" rel="noopener noreferrer">AMMYY Admin v3.5 (exe)</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/PDFCreator-1_7_3_setup.exe" target="_blank" rel="noopener noreferrer">PDF Creator</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/TeamViewer_Setup_en.exe" target="_blank" rel="noopener noreferrer">TeamViewer full version - Windows</a>
-        <a href="http://www.digitalsignatureindia.com/downloads/utility/TeamViewer.dmg" target="_blank" rel="noopener noreferrer">TeamViewer full version - Mac</a>
-      </div>
-    </div>
-
-    <div class="downloads-footer">
-      <span>DSC Reseller</span> · Downloads Centre
-    </div>
-
   </div>
 </section>
+<!--  DOWNLOADS SECTION END -->
 
-
-<!-- =========================================================
-     FOOTER SECTION START
-========================================================= -->
+<!-- FOOTER SECTION START -->
 <footer
   id="site-footer"
   class="relative overflow-hidden bg-slate-950 text-white"
@@ -861,13 +1066,12 @@
     </div>
   </div>
 </footer>
-<!-- =========================================================
-     FOOTER SECTION END
-========================================================= -->
+<!-- FOOTER SECTION END -->
 
 
 
 
     <script src="./src/script.js"></script>
+    <script src="./src/downloads.js"></script>
 </body>
 </html>
